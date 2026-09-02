@@ -44,6 +44,12 @@ Expected result:
 S = `1100`  
 C4 = `0`
 
+## Simulation Waveform
+
+The design was simulated using EDA Playground and the resulting waveform is shown below.
+
+![Simulation Waveform](waveform.png)
+
 ## Tools
 
 - Verilog/SystemVerilog
