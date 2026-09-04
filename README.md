@@ -1,57 +1,121 @@
-# 4-bit Carry Look-Ahead Adder
+# Verilog Digital Design
 
 ## Overview
 
-This project implements a 4-bit Carry Look-Ahead Adder (CLA) using Verilog/SystemVerilog.
+This repository contains my Verilog/SystemVerilog designs and digital logic projects developed while learning RTL and digital design.
 
-The Carry Look-Ahead Adder reduces carry propagation delay by calculating the carry signals in parallel using generate and propagate functions.
+The projects progress from basic digital logic circuits to more advanced RTL designs and, eventually, computer architecture and CPU design.
 
-## Design
+---
 
-The design uses:
+## Topics Covered
 
-- Generate (G) signals
-- Propagate (P) signals
-- Carry look-ahead equations
-- XOR gates for sum generation
+- Combinational Logic
+- Arithmetic Circuits
+- Sequential Logic
+- Registers and Counters
+- RTL Design
+- Computer Architecture
+- CPU Design
+- FPGA Design
 
-### Inputs
+---
 
-- `A[3:0]` - 4-bit input A
-- `B[3:0]` - 4-bit input B
+## Repository Structure
 
-### Outputs
+```text
+verilog-digital-design/
+│
+├── arithmetic/
+│   ├── basic/
+│   │   └── adders-subtractors/
+│   │       ├── README.md
+│   │       ├── half_adder.sv
+│   │       ├── half_adder_tb.sv
+│   │       ├── full_adder.sv
+│   │       ├── full_adder_tb.sv
+│   │       ├── half_subtractor.sv
+│   │       ├── half_subtractor_tb.sv
+│   │       └── ...
+│   │
+│   └── advanced/
+│       ├── carry-lookahead-adder/
+│       │   ├── README.md
+│       │   ├── carry_lookahead_adder.sv
+│       │   ├── carry_lookahead_adder_tb.sv
+│       │   └── waveform.png
+│       └── ...
+│
+├── combinational/
+│   └── ...
+│
+├── sequential/
+│   └── ...
+│
+├── rtl/
+│   └── ...
+│
+└── README.md
+```
 
-- `S[3:0]` - 4-bit sum
-- `C4` - Final carry output
+---
 
-## Files
+## Current Projects
 
-| File | Description |
-|---|---|
-| `carry_lookahead_adder.sv` | 4-bit CLA RTL design |
-| `carry_lookahead_adder_tb.sv` | Verilog testbench |
+### Arithmetic
 
-## Test Case
+#### Basic Adders and Subtractors
 
-For:
+Fundamental 1-bit arithmetic circuits:
 
-A = `0111`  
-B = `0101`
+- Half Adder
+- Full Adder
+- Half Subtractor
+- Full Subtractor
 
-Expected result:
+#### Carry Look-Ahead Adder
 
-S = `1100`  
-C4 = `0`
+A 4-bit Carry Look-Ahead Adder implemented using generate and propagate signals to calculate carry signals efficiently.
 
-## Simulation Waveform
-
-The design was simulated using EDA Playground and the resulting waveform is shown below.
-
-![Simulation Waveform](waveform.png)
+---
 
 ## Tools
 
 - Verilog/SystemVerilog
 - EDA Playground
-- VCD waveform simulation
+- Icarus Verilog
+- GitHub
+
+---
+
+## Learning Progress
+
+This repository is being developed progressively as I learn digital design and RTL design.
+
+The planned progression is:
+
+```text
+Digital Logic
+      ↓
+Verilog/SystemVerilog
+      ↓
+Combinational RTL
+      ↓
+Sequential RTL
+      ↓
+Arithmetic Units
+      ↓
+ALU
+      ↓
+Computer Architecture
+      ↓
+CPU Design
+      ↓
+FPGA / RTL Projects
+```
+
+---
+
+## Goal
+
+The goal of this repository is to build a strong foundation in digital design, Verilog/SystemVerilog, RTL development, and computer architecture through practical implementations and progressively larger projects.
